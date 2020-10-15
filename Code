@@ -1,0 +1,19 @@
+#include <Servo.h>
+
+Servo servo_13;
+
+void setup()
+{
+  servo_13.attach(13);
+
+}
+
+void loop()
+{
+  servo_13.write(180);
+  delay(2000); // Wait for 2000 millisecond(s)
+  servo_13.write(1);
+  delay(1000); // Wait for 1000 millisecond(s)
+  servo_13.write(180);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
